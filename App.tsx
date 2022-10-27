@@ -6,7 +6,7 @@ import { THEME } from "./src/theme";
 
 import { Loading } from "@components/Loading";
 
-import { Signin } from "@screens/Signin";
+import { Routes } from "@routes/index";
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
@@ -17,7 +17,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Signin/>: <Loading />}
+      {fontsLoaded ? <Routes/>: <Loading />}
     </NativeBaseProvider>
   );
 }
