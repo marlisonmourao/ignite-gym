@@ -1,4 +1,4 @@
-import { Heading, HStack, Icon, Text, VStack, Image, Box } from "native-base";
+import { Heading , HStack, Icon, Text, VStack, Image, Box } from "native-base";
 import { TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons"
@@ -32,7 +32,7 @@ export function Exercise() {
         </TouchableOpacity>
 
         <HStack justifyContent="space-between" mt={4} mb={8} alignItems="center">
-          <Heading color="gray.100" fontSize="lg" flexShrink={1}>
+          <Heading  color="gray.100" fontSize="lg" flexShrink={1} fontFamily="heading">
             Puxada frontal
           </Heading>
 

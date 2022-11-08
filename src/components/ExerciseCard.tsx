@@ -21,7 +21,7 @@ export function ExerciseCard({title, ...rest}: Props) {
           resizeMode="center"
         />
         <VStack flex={1}>
-          <Heading fontSize="lg" color="white">
+          <Heading fontSize="lg" color="white" fontFamily="heading">
             {title}
           </Heading>
 
