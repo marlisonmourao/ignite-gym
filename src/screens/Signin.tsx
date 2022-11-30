@@ -38,10 +38,10 @@ export function Signin() {
       setIsLoading(true);
       await sigIn(email, password)
     }catch (error) {
+      setIsLoading(false);
       const isAppError = error instanceof AppError;
 
-    const title = isAppError ? error.message : 'Não foi possível entrar, tente novamente mais tarde'
-    setIsLoading(false);
+      const title = isAppError ? error.message : 'Não foi possível entrar, tente novamente mais tarde'
 
     toast.show({
       title,
